@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signal Desk — 2026-06-09 23:22</title>
+<style>
+  :root {
+    --bg:#0d1117; --panel:#141b26; --line:#243044;
+    --ink:#dbe4f0; --dim:#7d8da3;
+    --dip:#e8b339; --mom:#3fd0a4; --avd:#e05f5f; --neu:#5d6b80;
+    --accent:#6ea8fe;
+  }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--ink);
+         font:14px/1.5 "Segoe UI",system-ui,sans-serif; padding:28px clamp(14px,4vw,48px); }
+  .mono { font-family:Consolas,"Cascadia Mono",monospace; }
+  header { display:flex; flex-wrap:wrap; align-items:baseline; gap:14px;
+            border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:24px; }
+  h1 { font-size:20px; letter-spacing:.04em; }
+  h1 span { color:var(--accent); }
+  .wave { font-family:Consolas,monospace; color:var(--dim); font-size:13px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.14em;
+        color:var(--dim); margin:28px 0 12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:12px; }
+  .card { background:var(--panel); border:1px solid var(--line);
+           border-left:3px solid var(--neu); border-radius:8px; padding:12px 14px; }
+  .card.dip { border-left-color:var(--dip); }
+  .card.mom { border-left-color:var(--mom); }
+  .card.avd { border-left-color:var(--avd); }
+  .card.opp { border-left-color:var(--accent); }
+  .card-top { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+  .tk { font-family:Consolas,monospace; font-weight:700; font-size:15px; }
+  .verdict { font-size:11px; letter-spacing:.1em; color:var(--dim); }
+  .dip .verdict { color:var(--dip); } .mom .verdict { color:var(--mom); }
+  .avd .verdict { color:var(--avd); }
+  .status { margin-left:auto; font-size:10px; letter-spacing:.08em;
+             padding:2px 7px; border-radius:10px; border:1px solid var(--line); }
+  .st-conf { color:var(--mom); border-color:var(--mom); }
+  .st-prov { color:var(--dip); border-color:var(--dip); }
+  .st-fade { color:var(--dim); text-decoration:line-through; }
+  .st-new  { color:var(--accent); border-color:var(--accent); }
+  .st-off  { color:var(--dim); }
+  .dir { font-size:11px; letter-spacing:.1em; padding:2px 7px; border-radius:10px; }
+  .dir.long { color:var(--mom); border:1px solid var(--mom); }
+  .dir.watch { color:var(--dim); border:1px solid var(--line); }
+  .score { margin-left:auto; font-family:Consolas,monospace; font-size:12px; color:var(--accent); }
+  .px-row { display:flex; gap:12px; align-items:baseline; font-family:Consolas,monospace; }
+  .px { font-size:18px; font-weight:600; }
+  .chg.up { color:var(--mom); } .chg.dn { color:var(--avd); }
+  .up { color:var(--mom); } .dn { color:var(--avd); }
+  .rsi { color:var(--dim); font-size:12px; }
+  .levels { display:flex; gap:14px; margin-top:6px; font-family:Consolas,monospace;
+             font-size:12px; color:var(--dim); }
+  .levels b { color:var(--ink); }
+  .why { margin-top:8px; font-size:12.5px; color:var(--dim); }
+  .empty { color:var(--dim); font-style:italic; }
+  .journal { display:flex; gap:24px; flex-wrap:wrap; background:var(--panel);
+              border:1px solid var(--line); border-radius:8px; padding:12px 16px; }
+  .jstat { display:flex; gap:12px; font-family:Consolas,monospace; font-size:13px; }
+  .jlabel { color:var(--accent); letter-spacing:.08em; }
+  footer { margin-top:32px; border-top:1px solid var(--line); padding-top:12px;
+            font-size:12px; color:var(--dim); }
+</style></head><body>
+<header>
+  <h1>SIGNAL<span>DESK</span></h1>
+  <span class="wave">Off-schedule run · generated 2026-06-09 23:22 CET · data: Yahoo Finance</span>
+</header>
+
+<h2>EU Session — held</h2>
+<div class="grid"><p class="empty">No EU data this run.</p></div>
+
+<h2>US Session — held</h2>
+<div class="grid"><p class="empty">No US data this run.</p></div>
+
+<h2>Daily Opportunities — liquid non-held large caps moving today</h2>
+<div class="grid"><p class="empty">Nothing in the universe is moving more than 1% today — quiet tape, no forced trades.</p></div>
+
+<h2>CFD Picks — top 3 by tradability (demo account)</h2>
+<div class="grid">
+        <div class="card neu">
+          <div class="card-top">
+            <span class="tk">COIN</span>
+            <span class="verdict">NEUTRAL</span>
+          </div>
+          <div class="px-row">
+            <span class="px">155.52</span>
+            <span class="chg dn">-4.07%</span>
+            <span class="rsi">RSI 36.9</span>
+          </div>
+          <div class="levels"><span>SL <b>137.35</b></span><span>TP <b>185.81</b></span><span>ATR <b>12.11</b></span></div>
+          <p class="why">No clear setup.</p>
+        </div>
+        <div class="card neu">
+          <div class="card-top">
+            <span class="tk">INTC</span>
+            <span class="verdict">NEUTRAL</span>
+          </div>
+          <div class="px-row">
+            <span class="px">108.06</span>
+            <span class="chg dn">-2.00%</span>
+            <span class="rsi">RSI 51.1</span>
+          </div>
+          <div class="levels"><span>SL <b>94.24</b></span><span>TP <b>131.1</b></span><span>ATR <b>9.21</b></span></div>
+          <p class="why">No clear setup.</p>
+        </div>
+        <div class="card neu">
+          <div class="card-top">
+            <span class="tk">AMD</span>
+            <span class="verdict">NEUTRAL</span>
+          </div>
+          <div class="px-row">
+            <span class="px">475.5</span>
+            <span class="chg dn">-3.02%</span>
+            <span class="rsi">RSI 55.3</span>
+          </div>
+          <div class="levels"><span>SL <b>427.4</b></span><span>TP <b>555.67</b></span><span>ATR <b>32.07</b></span></div>
+          <p class="why">No clear setup.</p>
+        </div></div>
+
+<h2>Trade Journal</h2>
+<div class="journal">
+  <div class="jstat"><span class="jlabel">OPEN</span><span>0 positions</span></div>
+  <div class="jstat"><span class="jlabel">DIP</span><span>0 closed</span><span>win –</span><span class="up">+0</span></div>
+  <div class="jstat"><span class="jlabel">MOMENTUM</span><span>0 closed</span><span>win –</span><span class="up">+0</span></div>
+</div>
+
+<footer>Stops 1.5×ATR · targets 2.5×ATR · two-wave confirmation filters opening noise.
+Decision aid, not advice — verify on XTB before acting. Off-schedule run at 23:22: EU/US market closed — reused last scan from state. Opportunities reused from last scan (US closed).</footer>
+</body></html>
