@@ -1,0 +1,43 @@
+name: Market scan
+
+on:
+  schedule:
+    # GitHub cron is UTC. CET/CEST shifts, so both offsets are scheduled —
+    # the script's --wave auto detection picks the right wave and treats
+    # the off-DST duplicates as harmless off-schedule/repeat runs.
+    - cron: '0 7 * * 1-5'    # 09:00 CEST (summer EU open)  / 08:00 CET (ignored)
+    - cron: '0 8 * * 1-5'    # 10:00 CEST (summer EU conf)  / 09:00 CET (winter EU open)
+    - cron: '0 9 * * 1-5'    # 11:00 CEST (off-schedule)    / 10:00 CET (winter EU conf)
+    - cron: '30 13 * * 1-5'  # 15:30 CEST (summer US open)  / 14:30 CET (ignored)
+    - cron: '30 14 * * 1-5'  # 16:30 CEST (summer US conf)  / 15:30 CET (winter US open)
+    - cron: '30 15 * * 1-5'  # 17:30 CEST (off-schedule)    / 16:30 CET (winter US conf)
+  workflow_dispatch:          # manual "Run workflow" button — fresh scan on demand
+
+concurrency:
+  group: market-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas
+
+      - name: Run scan
+        run: python market_agent.py --wave auto --no-open
+
+      - name: Commit dashboard and state
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'scan: ${{ github.event.schedule || ''manual'' }}'
+          file_pattern: 'dashboard.html session_state.json trades.json'
