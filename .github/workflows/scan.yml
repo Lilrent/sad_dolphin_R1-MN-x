@@ -35,7 +35,10 @@ jobs:
 
       - name: Run scan
         run: python market_agent.py --wave auto --no-open
-
+        
+      - name: Ensure journal exists
+        run: '[ -f trades.json ] || echo "[]" > trades.json'
+        
       - name: Commit dashboard and state
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
