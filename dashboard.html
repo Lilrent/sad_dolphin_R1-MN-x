@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Signal Desk — 2026-06-10 15:30</title>
+<title>Signal Desk — 2026-06-10 15:46</title>
 <style>
   :root {
     --bg:#0d1117; --panel:#141b26; --line:#243044;
@@ -26,12 +26,13 @@
   .card.dip { border-left-color:var(--dip); }
   .card.mom { border-left-color:var(--mom); }
   .card.avd { border-left-color:var(--avd); }
+  .card.sht { border-left-color:#c77dff; }
   .card.opp { border-left-color:var(--accent); }
   .card-top { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
   .tk { font-family:Consolas,monospace; font-weight:700; font-size:15px; }
   .verdict { font-size:11px; letter-spacing:.1em; color:var(--dim); }
   .dip .verdict { color:var(--dip); } .mom .verdict { color:var(--mom); }
-  .avd .verdict { color:var(--avd); }
+  .avd .verdict { color:var(--avd); } .sht .verdict { color:#c77dff; }
   .status { margin-left:auto; font-size:10px; letter-spacing:.08em;
              padding:2px 7px; border-radius:10px; border:1px solid var(--line); }
   .st-conf { color:var(--mom); border-color:var(--mom); }
@@ -42,6 +43,7 @@
   .dir { font-size:11px; letter-spacing:.1em; padding:2px 7px; border-radius:10px; }
   .dir.long { color:var(--mom); border:1px solid var(--mom); }
   .dir.watch { color:var(--dim); border:1px solid var(--line); }
+  .dir.short { color:#c77dff; border:1px solid #c77dff; }
   .score { margin-left:auto; font-family:Consolas,monospace; font-size:12px; color:var(--accent); }
   .px-row { display:flex; gap:12px; align-items:baseline; font-family:Consolas,monospace; }
   .px { font-size:18px; font-weight:600; }
@@ -62,7 +64,7 @@
 </style></head><body>
 <header>
   <h1>SIGNAL<span>DESK</span></h1>
-  <span class="wave">US Open Wave (15:30 CET) · generated 2026-06-10 15:30 CET · data: Yahoo Finance</span>
+  <span class="wave">US Open Wave (15:30 CET) · generated 2026-06-10 15:46 CET · data: Yahoo Finance</span>
 </header>
 
 <h2>EU Session — held</h2>
@@ -115,25 +117,25 @@
             <span class="verdict">NEUTRAL</span>
           </div>
           <div class="px-row">
-            <span class="px">363.51</span>
-            <span class="chg dn">-0.21%</span>
-            <span class="rsi">RSI 43.7</span>
+            <span class="px">364.15</span>
+            <span class="chg dn">-0.03%</span>
+            <span class="rsi">RSI 44.0</span>
           </div>
-          <div class="levels"><span>SL <b>349.01</b></span><span>TP <b>387.67</b></span><span>ATR <b>9.67</b></span></div>
+          <div class="levels"><span>SL <b>349.44</b></span><span>TP <b>388.66</b></span><span>ATR <b>9.8</b></span></div>
           <p class="why">No clear setup.</p>
         </div>
-        <div class="card neu">
+        <div class="card avd">
           <div class="card-top">
             <span class="tk">PLTR</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">AVOID</span>
           </div>
           <div class="px-row">
-            <span class="px">130.47</span>
-            <span class="chg dn">-1.21%</span>
-            <span class="rsi">RSI 40.9</span>
+            <span class="px">131.53</span>
+            <span class="chg dn">-0.41%</span>
+            <span class="rsi">RSI 41.8</span>
           </div>
-          <div class="levels"><span>SL <b>120.31</b></span><span>TP <b>147.41</b></span><span>ATR <b>6.77</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>121.31</b></span><span>TP <b>148.56</b></span><span>ATR <b>6.81</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div>
         <div class="card neu">
           <div class="card-top">
@@ -141,38 +143,38 @@
             <span class="verdict">NEUTRAL</span>
           </div>
           <div class="px-row">
-            <span class="px">205.83</span>
-            <span class="chg dn">-1.13%</span>
-            <span class="rsi">RSI 44.6</span>
+            <span class="px">205.46</span>
+            <span class="chg dn">-1.31%</span>
+            <span class="rsi">RSI 44.4</span>
           </div>
-          <div class="levels"><span>SL <b>193.48</b></span><span>TP <b>226.41</b></span><span>ATR <b>8.23</b></span></div>
+          <div class="levels"><span>SL <b>193.12</b></span><span>TP <b>226.04</b></span><span>ATR <b>8.23</b></span></div>
           <p class="why">No clear setup.</p>
         </div>
-        <div class="card neu">
+        <div class="card mom">
           <div class="card-top">
             <span class="tk">NOW</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">MOMENTUM</span><span class="status st-prov">PROVISIONAL</span>
           </div>
           <div class="px-row">
-            <span class="px">105.32</span>
-            <span class="chg dn">-1.54%</span>
-            <span class="rsi">RSI 48.7</span>
+            <span class="px">109.25</span>
+            <span class="chg up">+2.13%</span>
+            <span class="rsi">RSI 51.6</span>
           </div>
-          <div class="levels"><span>SL <b>94.24</b></span><span>TP <b>123.78</b></span><span>ATR <b>7.38</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>97.89</b></span><span>TP <b>128.18</b></span><span>ATR <b>7.57</b></span></div>
+          <p class="why">Price > MA20 > MA50, RSI 52, green on the day (+2.1%). (Open wave — wait for confirmation.)</p>
         </div>
-        <div class="card neu">
+        <div class="card mom">
           <div class="card-top">
             <span class="tk">SNDK</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">MOMENTUM</span><span class="status st-prov">PROVISIONAL</span>
           </div>
           <div class="px-row">
-            <span class="px">1632.47</span>
-            <span class="chg dn">-0.85%</span>
-            <span class="rsi">RSI 57.8</span>
+            <span class="px">1686.58</span>
+            <span class="chg up">+2.43%</span>
+            <span class="rsi">RSI 60.5</span>
           </div>
-          <div class="levels"><span>SL <b>1445.71</b></span><span>TP <b>1943.74</b></span><span>ATR <b>124.51</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>1493.36</b></span><span>TP <b>2008.62</b></span><span>ATR <b>128.82</b></span></div>
+          <p class="why">Price > MA20 > MA50, RSI 60, green on the day (+2.4%). (Open wave — wait for confirmation.)</p>
         </div>
         <div class="card neu">
           <div class="card-top">
@@ -180,204 +182,191 @@
             <span class="verdict">NEUTRAL</span>
           </div>
           <div class="px-row">
-            <span class="px">917.96</span>
-            <span class="chg dn">-1.92%</span>
-            <span class="rsi">RSI 57.8</span>
+            <span class="px">924.2</span>
+            <span class="chg dn">-1.25%</span>
+            <span class="rsi">RSI 58.4</span>
           </div>
-          <div class="levels"><span>SL <b>812.89</b></span><span>TP <b>1093.07</b></span><span>ATR <b>70.04</b></span></div>
+          <div class="levels"><span>SL <b>818.73</b></span><span>TP <b>1099.98</b></span><span>ATR <b>70.31</b></span></div>
           <p class="why">No clear setup.</p>
         </div>
-        <div class="card neu">
+        <div class="card avd">
           <div class="card-top">
             <span class="tk">CRWV</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">AVOID</span>
           </div>
           <div class="px-row">
-            <span class="px">96.69</span>
-            <span class="chg dn">-1.78%</span>
-            <span class="rsi">RSI 41.2</span>
+            <span class="px">99.52</span>
+            <span class="chg up">+1.09%</span>
+            <span class="rsi">RSI 43.3</span>
           </div>
-          <div class="levels"><span>SL <b>83.58</b></span><span>TP <b>118.55</b></span><span>ATR <b>8.74</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>86.28</b></span><span>TP <b>121.59</b></span><span>ATR <b>8.83</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div>
-        <div class="card neu">
+        <div class="card mom">
           <div class="card-top">
             <span class="tk">INOD</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">MOMENTUM</span><span class="status st-prov">PROVISIONAL</span>
           </div>
           <div class="px-row">
-            <span class="px">97.17</span>
-            <span class="chg dn">-1.62%</span>
-            <span class="rsi">RSI 54.2</span>
+            <span class="px">101.82</span>
+            <span class="chg up">+3.09%</span>
+            <span class="rsi">RSI 56.9</span>
           </div>
-          <div class="levels"><span>SL <b>81.09</b></span><span>TP <b>123.96</b></span><span>ATR <b>10.72</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>85.42</b></span><span>TP <b>129.16</b></span><span>ATR <b>10.94</b></span></div>
+          <p class="why">Price > MA20 > MA50, RSI 57, green on the day (+3.1%). (Open wave — wait for confirmation.)</p>
         </div>
-        <div class="card neu">
+        <div class="card avd">
           <div class="card-top">
             <span class="tk">SOFI</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">AVOID</span>
           </div>
           <div class="px-row">
-            <span class="px">16.28</span>
-            <span class="chg dn">-1.15%</span>
-            <span class="rsi">RSI 47.3</span>
+            <span class="px">16.63</span>
+            <span class="chg up">+0.97%</span>
+            <span class="rsi">RSI 49.7</span>
           </div>
-          <div class="levels"><span>SL <b>14.9</b></span><span>TP <b>18.58</b></span><span>ATR <b>0.92</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>15.21</b></span><span>TP <b>19.0</b></span><span>ATR <b>0.95</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div>
-        <div class="card neu">
+        <div class="card mom">
           <div class="card-top">
             <span class="tk">PGY</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">MOMENTUM</span><span class="status st-prov">PROVISIONAL</span>
           </div>
           <div class="px-row">
-            <span class="px">14.6</span>
-            <span class="chg dn">-1.35%</span>
-            <span class="rsi">RSI 52.5</span>
+            <span class="px">14.94</span>
+            <span class="chg up">+0.91%</span>
+            <span class="rsi">RSI 54.5</span>
           </div>
-          <div class="levels"><span>SL <b>12.96</b></span><span>TP <b>17.33</b></span><span>ATR <b>1.09</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>13.26</b></span><span>TP <b>17.73</b></span><span>ATR <b>1.12</b></span></div>
+          <p class="why">Price > MA20 > MA50, RSI 55, green on the day (+0.9%). (Open wave — wait for confirmation.)</p>
         </div>
-        <div class="card neu">
+        <div class="card avd">
           <div class="card-top">
             <span class="tk">META</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">AVOID</span>
           </div>
           <div class="px-row">
-            <span class="px">583.01</span>
-            <span class="chg dn">-0.27%</span>
-            <span class="rsi">RSI 38.8</span>
+            <span class="px">589.4</span>
+            <span class="chg up">+0.82%</span>
+            <span class="rsi">RSI 41.4</span>
           </div>
-          <div class="levels"><span>SL <b>555.98</b></span><span>TP <b>628.04</b></span><span>ATR <b>18.01</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>561.65</b></span><span>TP <b>635.63</b></span><span>ATR <b>18.49</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div></div>
 
 <h2>Daily Opportunities — liquid non-held large caps moving today</h2>
 <div class="grid">
         <div class="card opp">
           <div class="card-top">
-            <span class="tk">ORCL</span>
-            <span class="dir watch">WATCH</span>
-            <span class="score">score 5.42</span>
+            <span class="tk">KO</span>
+            <span class="dir long">LONG</span>
+            <span class="score">score 4.28</span>
           </div>
           <div class="px-row">
-            <span class="px">199.05</span>
-            <span class="chg dn">-3.28%</span>
-            <span class="rsi">RSI 48.4</span>
+            <span class="px">82.58</span>
+            <span class="chg up">+1.52%</span>
+            <span class="rsi">RSI 63.0</span>
             <span class="rsi">vol ×0.5</span>
           </div>
           <div class="levels">
-            <span>Entry <b>199.05</b></span>
-            <span>SL <b>180.03</b></span>
-            <span>TP <b>230.75</b></span>
+            <span>Entry <b>82.58</b></span>
+            <span>SL <b>80.25</b></span>
+            <span>TP <b>86.46</b></span>
           </div>
-          <p class="why">No clear setup.</p>
+          <p class="why">Price > MA20 > MA50, RSI 63, green on the day (+1.5%).</p>
         </div>
         <div class="card opp">
           <div class="card-top">
             <span class="tk">UPS</span>
             <span class="dir watch">WATCH</span>
-            <span class="score">score 3.68</span>
+            <span class="score">score 3.91</span>
           </div>
           <div class="px-row">
-            <span class="px">105.58</span>
-            <span class="chg dn">-2.12%</span>
-            <span class="rsi">RSI 52.6</span>
+            <span class="px">105.43</span>
+            <span class="chg dn">-2.27%</span>
+            <span class="rsi">RSI 52.3</span>
             <span class="rsi">vol ×0.5</span>
           </div>
           <div class="levels">
-            <span>Entry <b>105.58</b></span>
-            <span>SL <b>101.54</b></span>
-            <span>TP <b>112.32</b></span>
+            <span>Entry <b>105.43</b></span>
+            <span>SL <b>101.3</b></span>
+            <span>TP <b>112.29</b></span>
           </div>
           <p class="why">No clear setup.</p>
         </div>
         <div class="card opp">
           <div class="card-top">
-            <span class="tk">NKE</span>
-            <span class="dir watch">WATCH</span>
-            <span class="score">score 3.62</span>
-          </div>
-          <div class="px-row">
-            <span class="px">43.72</span>
-            <span class="chg dn">-2.08%</span>
-            <span class="rsi">RSI 45.9</span>
-            <span class="rsi">vol ×0.5</span>
-          </div>
-          <div class="levels">
-            <span>Entry <b>43.72</b></span>
-            <span>SL <b>41.7</b></span>
-            <span>TP <b>47.09</b></span>
-          </div>
-          <p class="why">No clear setup.</p>
-        </div>
-        <div class="card opp">
-          <div class="card-top">
-            <span class="tk">KO</span>
+            <span class="tk">ORCL</span>
             <span class="dir long">LONG</span>
-            <span class="score">score 3.54</span>
+            <span class="score">score 3.83</span>
           </div>
           <div class="px-row">
-            <span class="px">82.18</span>
-            <span class="chg up">+1.03%</span>
-            <span class="rsi">RSI 61.6</span>
+            <span class="px">208.33</span>
+            <span class="chg up">+1.22%</span>
+            <span class="rsi">RSI 52.8</span>
             <span class="rsi">vol ×0.5</span>
           </div>
           <div class="levels">
-            <span>Entry <b>82.18</b></span>
-            <span>SL <b>79.85</b></span>
-            <span>TP <b>86.05</b></span>
+            <span>Entry <b>208.33</b></span>
+            <span>SL <b>189.03</b></span>
+            <span>TP <b>240.49</b></span>
           </div>
-          <p class="why">Price > MA20 > MA50, RSI 62, green on the day (+1.0%).</p>
+          <p class="why">Price > MA20 > MA50, RSI 53, green on the day (+1.2%).</p>
         </div>
         <div class="card opp">
           <div class="card-top">
-            <span class="tk">QCOM</span>
-            <span class="dir watch">WATCH</span>
-            <span class="score">score 3.5</span>
+            <span class="tk">INTC</span>
+            <span class="dir long">LONG</span>
+            <span class="score">score 3.65</span>
           </div>
           <div class="px-row">
-            <span class="px">201.32</span>
-            <span class="chg dn">-2.00%</span>
-            <span class="rsi">RSI 46.3</span>
+            <span class="px">110.19</span>
+            <span class="chg up">+2.10%</span>
+            <span class="rsi">RSI 52.9</span>
             <span class="rsi">vol ×0.5</span>
           </div>
           <div class="levels">
-            <span>Entry <b>201.32</b></span>
-            <span>SL <b>175.64</b></span>
-            <span>TP <b>244.13</b></span>
+            <span>Entry <b>110.19</b></span>
+            <span>SL <b>96.83</b></span>
+            <span>TP <b>132.45</b></span>
+          </div>
+          <p class="why">No clear setup.</p>
+        </div>
+        <div class="card opp">
+          <div class="card-top">
+            <span class="tk">CAT</span>
+            <span class="dir watch">WATCH</span>
+            <span class="score">score 2.67</span>
+          </div>
+          <div class="px-row">
+            <span class="px">901.4</span>
+            <span class="chg dn">-1.45%</span>
+            <span class="rsi">RSI 53.5</span>
+            <span class="rsi">vol ×0.5</span>
+          </div>
+          <div class="levels">
+            <span>Entry <b>901.4</b></span>
+            <span>SL <b>854.37</b></span>
+            <span>TP <b>979.79</b></span>
           </div>
           <p class="why">No clear setup.</p>
         </div></div>
 
 <h2>CFD Picks — top 3 by tradability (demo account)</h2>
 <div class="grid">
-        <div class="card neu">
-          <div class="card-top">
-            <span class="tk">SAP.DE</span>
-            <span class="verdict">NEUTRAL</span>
-          </div>
-          <div class="px-row">
-            <span class="px">147.4</span>
-            <span class="chg dn">-4.72%</span>
-            <span class="rsi">RSI 44.5</span>
-          </div>
-          <div class="levels"><span>SL <b>137.28</b></span><span>TP <b>164.26</b></span><span>ATR <b>6.74</b></span></div>
-          <p class="why">No clear setup.</p>
-        </div>
-        <div class="card neu">
+        <div class="card avd">
           <div class="card-top">
             <span class="tk">COIN</span>
-            <span class="verdict">NEUTRAL</span>
+            <span class="verdict">AVOID</span>
           </div>
           <div class="px-row">
-            <span class="px">154.51</span>
-            <span class="chg dn">-0.64%</span>
-            <span class="rsi">RSI 36.5</span>
+            <span class="px">160.63</span>
+            <span class="chg up">+3.30%</span>
+            <span class="rsi">RSI 40.2</span>
           </div>
-          <div class="levels"><span>SL <b>137.28</b></span><span>TP <b>183.22</b></span><span>ATR <b>11.49</b></span></div>
-          <p class="why">No clear setup.</p>
+          <div class="levels"><span>SL <b>142.84</b></span><span>TP <b>190.29</b></span><span>ATR <b>11.86</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div>
         <div class="card neu">
           <div class="card-top">
@@ -385,12 +374,25 @@
             <span class="verdict">NEUTRAL</span>
           </div>
           <div class="px-row">
-            <span class="px">107.93</span>
-            <span class="chg up">+0.01%</span>
-            <span class="rsi">RSI 51.2</span>
+            <span class="px">110.28</span>
+            <span class="chg up">+2.19%</span>
+            <span class="rsi">RSI 52.9</span>
           </div>
-          <div class="levels"><span>SL <b>94.84</b></span><span>TP <b>129.75</b></span><span>ATR <b>8.73</b></span></div>
+          <div class="levels"><span>SL <b>96.93</b></span><span>TP <b>132.54</b></span><span>ATR <b>8.9</b></span></div>
           <p class="why">No clear setup.</p>
+        </div>
+        <div class="card avd">
+          <div class="card-top">
+            <span class="tk">SAP.DE</span>
+            <span class="verdict">AVOID</span>
+          </div>
+          <div class="px-row">
+            <span class="px">146.7</span>
+            <span class="chg dn">-5.17%</span>
+            <span class="rsi">RSI 44.0</span>
+          </div>
+          <div class="levels"><span>SL <b>136.58</b></span><span>TP <b>163.56</b></span><span>ATR <b>6.74</b></span></div>
+          <p class="why">Below MA200 and MA50 — broken trend, falling knife risk.</p>
         </div></div>
 
 <h2>Trade Journal</h2>
@@ -400,6 +402,6 @@
   <div class="jstat"><span class="jlabel">MOMENTUM</span><span>0 closed</span><span>win –</span><span class="up">+0</span></div>
 </div>
 
-<footer>Stops 1.5×ATR · targets 2.5×ATR · two-wave confirmation filters opening noise.
+<footer>Stops 1.5×ATR · targets 2.5×ATR (inverted for shorts) · two-wave confirmation filters opening noise.
 Decision aid, not advice — verify on XTB before acting.</footer>
 </body></html>
