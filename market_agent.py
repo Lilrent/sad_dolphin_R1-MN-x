@@ -187,7 +187,7 @@ def fetch_history(tickers, demo=False):
 
     import yfinance as yf
     out = {}
-    data = yf.download(tickers, period="9mo", interval="1d",
+    data = yf.download(tickers, period="12mo", interval="1d",
                        group_by="ticker", auto_adjust=False,
                        progress=False, threads=True)
     for t in tickers:
@@ -235,7 +235,7 @@ def _demo_history(tickers):
         closes, highs, lows = [], [], []
         price = base
         trend = rng.uniform(-0.001, 0.002)
-        for _ in range(190):
+        for _ in range(260):
             price *= 1 + trend + rng.gauss(0, 0.018)
             hi = price * (1 + abs(rng.gauss(0, 0.008)))
             lo = price * (1 - abs(rng.gauss(0, 0.008)))
@@ -256,8 +256,9 @@ def _demo_history(tickers):
 # Signal engine
 # ----------------------------------------------------------------------------
 
-def analyze(t, h):
-    """Compute indicators + verdict for one ticker."""
+def analyze(t, h, allow_short=False):
+    """Compute indicators + verdict for one ticker. allow_short enables
+    short-side setups (used for opportunities + CFD, not held watchlist)."""
     closes, highs, lows = h["closes"], h["highs"], h["lows"]
     price = h["price"]
     r = rsi(closes)
@@ -269,7 +270,16 @@ def analyze(t, h):
     uptrend = ma200 is not None and price > ma200
     pullback_3d = (closes[-4] - price) if len(closes) >= 4 else 0.0
 
-    if ma200 is not None and price < ma200 and (ma50 is None or price < ma50):
+    if (allow_short and ma200 is not None and price < ma200
+            and r is not None and r > 62):
+        verdict, reason = "SHORT", (f"Bear rally fade: RSI {r:.0f} overbought "
+                                    "below MA200 — bounce into a broken trend.")
+    elif (allow_short and ma20 and ma50 and price < ma20 < ma50
+          and ma200 is not None and price < ma200
+          and r is not None and 30 <= r <= 50 and day_chg < 0):
+        verdict, reason = "SHORT", (f"Downtrend momentum: price < MA20 < MA50 < trend, "
+                                    f"RSI {r:.0f}, red on the day ({day_chg:.1f}%).")
+    elif ma200 is not None and price < ma200 and (ma50 is None or price < ma50):
         verdict, reason = "AVOID", "Below MA200 and MA50 — broken trend, falling knife risk."
     elif r is not None and r < 32:
         verdict, reason = "DIP", f"RSI {r:.0f} oversold."
@@ -283,8 +293,12 @@ def analyze(t, h):
         verdict, reason = "MOMENTUM", (f"Price > MA20 > MA50, RSI {r:.0f}, "
                                        f"green on the day (+{day_chg:.1f}%).")
 
-    sl = price - SL_ATR_MULT * a if a else None
-    tp = price + TP_ATR_MULT * a if a else None
+    if verdict == "SHORT":
+        sl = price + SL_ATR_MULT * a if a else None   # stop ABOVE entry
+        tp = price - TP_ATR_MULT * a if a else None   # target BELOW entry
+    else:
+        sl = price - SL_ATR_MULT * a if a else None
+        tp = price + TP_ATR_MULT * a if a else None
     return {
         "ticker": t, "price": round(price, 2), "day_chg": round(day_chg, 2),
         "rsi": round(r, 1) if r is not None else None,
@@ -307,18 +321,21 @@ def scan_opportunities(history, held):
     for t, h in history.items():
         if t in held:
             continue
-        sig = analyze(t, h)
+        sig = analyze(t, h, allow_short=True)
         move = abs(sig["day_chg"])
         if move < 1.0:                      # needs to actually be moving today
             continue
         liquidity = 1.0
         if h.get("avg_volume"):
             liquidity = min(2.0, max(0.5, h["volume"] / h["avg_volume"]))
-        setup_bonus = {"DIP": 2.0, "MOMENTUM": 1.5, "NEUTRAL": 0.0, "AVOID": -3.0}[sig["verdict"]]
+        setup_bonus = {"DIP": 2.0, "MOMENTUM": 1.5, "SHORT": 2.0,
+                       "NEUTRAL": 0.0, "AVOID": -3.0}[sig["verdict"]]
         score = move * 1.5 + liquidity + setup_bonus
         direction = "LONG"
-        if sig["verdict"] == "AVOID" or (sig["day_chg"] < 0 and sig["verdict"] == "NEUTRAL"):
-            # red day, no dip-quality setup → only interesting as a watch/short idea
+        if sig["verdict"] == "SHORT":
+            direction = "SHORT"
+        elif sig["verdict"] == "AVOID" or (sig["day_chg"] < 0 and sig["verdict"] == "NEUTRAL"):
+            # red day with no qualifying setup either way → watch only
             direction = "WATCH"
         sig.update({"score": round(score, 2), "direction": direction,
                     "vol_ratio": round(liquidity, 2)})
@@ -331,10 +348,11 @@ def scan_cfd(history):
     """CFD picks: same engine, scored for short-horizon tradability, top 3."""
     out = []
     for t, h in history.items():
-        sig = analyze(t, h)
+        sig = analyze(t, h, allow_short=True)
         move = abs(sig["day_chg"])
         atr_pct = (sig["atr"] / sig["price"] * 100) if sig["atr"] and sig["price"] else 0
-        setup = {"DIP": 2.5, "MOMENTUM": 2.0, "NEUTRAL": 0.5, "AVOID": 0.0}[sig["verdict"]]
+        setup = {"DIP": 2.5, "SHORT": 2.5, "MOMENTUM": 2.0,
+                 "NEUTRAL": 0.5, "AVOID": 0.0}[sig["verdict"]]
         score = move + atr_pct * 0.8 + setup
         sig.update({"score": round(score, 2)})
         out.append(sig)
@@ -455,7 +473,8 @@ def render_html(ctx):
 
     def card(s, show_status=True):
         v = s["verdict"]
-        cls = {"DIP": "dip", "MOMENTUM": "mom", "NEUTRAL": "neu", "AVOID": "avd"}[v]
+        cls = {"DIP": "dip", "MOMENTUM": "mom", "SHORT": "sht",
+               "NEUTRAL": "neu", "AVOID": "avd"}[v]
         chg = s["day_chg"]
         chg_cls = "up" if chg >= 0 else "dn"
         status = s.get("status", "")
@@ -487,11 +506,12 @@ def render_html(ctx):
         </div>"""
 
     def opp_card(s):
+        dcls = {"LONG": "long", "SHORT": "short"}.get(s["direction"], "watch")
         return f"""
         <div class="card opp">
           <div class="card-top">
             <span class="tk">{s["ticker"]}</span>
-            <span class="dir {'long' if s['direction']=='LONG' else 'watch'}">{s["direction"]}</span>
+            <span class="dir {dcls}">{s["direction"]}</span>
             <span class="score">score {s["score"]}</span>
           </div>
           <div class="px-row">
@@ -551,12 +571,13 @@ def render_html(ctx):
   .card.dip {{ border-left-color:var(--dip); }}
   .card.mom {{ border-left-color:var(--mom); }}
   .card.avd {{ border-left-color:var(--avd); }}
+  .card.sht {{ border-left-color:#c77dff; }}
   .card.opp {{ border-left-color:var(--accent); }}
   .card-top {{ display:flex; align-items:center; gap:8px; margin-bottom:6px; }}
   .tk {{ font-family:Consolas,monospace; font-weight:700; font-size:15px; }}
   .verdict {{ font-size:11px; letter-spacing:.1em; color:var(--dim); }}
   .dip .verdict {{ color:var(--dip); }} .mom .verdict {{ color:var(--mom); }}
-  .avd .verdict {{ color:var(--avd); }}
+  .avd .verdict {{ color:var(--avd); }} .sht .verdict {{ color:#c77dff; }}
   .status {{ margin-left:auto; font-size:10px; letter-spacing:.08em;
              padding:2px 7px; border-radius:10px; border:1px solid var(--line); }}
   .st-conf {{ color:var(--mom); border-color:var(--mom); }}
@@ -567,6 +588,7 @@ def render_html(ctx):
   .dir {{ font-size:11px; letter-spacing:.1em; padding:2px 7px; border-radius:10px; }}
   .dir.long {{ color:var(--mom); border:1px solid var(--mom); }}
   .dir.watch {{ color:var(--dim); border:1px solid var(--line); }}
+  .dir.short {{ color:#c77dff; border:1px solid #c77dff; }}
   .score {{ margin-left:auto; font-family:Consolas,monospace; font-size:12px; color:var(--accent); }}
   .px-row {{ display:flex; gap:12px; align-items:baseline; font-family:Consolas,monospace; }}
   .px {{ font-size:18px; font-weight:600; }}
@@ -609,7 +631,7 @@ def render_html(ctx):
   {jline("momentum")}
 </div>
 
-<footer>Stops 1.5×ATR · targets 2.5×ATR · two-wave confirmation filters opening noise.
+<footer>Stops 1.5×ATR · targets 2.5×ATR (inverted for shorts) · two-wave confirmation filters opening noise.
 Decision aid, not advice — verify on XTB before acting.{ctx["note"]}</footer>
 </body></html>"""
     DASHBOARD_FILE.write_text(html, encoding="utf-8")
