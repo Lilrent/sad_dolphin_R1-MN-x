@@ -1,5 +1,5 @@
 name: Market scan
-
+# v2
 on:
   schedule:
     # GitHub cron is UTC. CET/CEST shifts, so both offsets are scheduled —
