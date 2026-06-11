@@ -314,5 +314,59 @@
         "vol_ratio": 0.54
       }
     ]
+  },
+  "2026-06-11": {
+    "eu_open": {
+      "CSG.AS": "DIP",
+      "IWDA.L": "DIP",
+      "CSPX.L": "DIP"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 14.33,
+        "day_chg": 0.93,
+        "rsi": 29.9,
+        "ma20": 16.78,
+        "ma50": 18.89,
+        "ma200": null,
+        "atr": 0.97,
+        "sl": 12.87,
+        "tp": 16.76,
+        "verdict": "DIP",
+        "reason": "RSI 30 oversold. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 139.54,
+        "day_chg": -0.07,
+        "rsi": 44.4,
+        "ma20": 142.05,
+        "ma50": 137.55,
+        "ma200": 131.16,
+        "atr": 1.61,
+        "sl": 137.13,
+        "tp": 143.55,
+        "verdict": "DIP",
+        "reason": "Sharp pullback in uptrend: ~2.8 off in 3 sessions (> 1 ATR), RSI 44. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 787.92,
+        "day_chg": -0.03,
+        "rsi": 44.3,
+        "ma20": 804.0,
+        "ma50": 772.63,
+        "ma200": 736.11,
+        "atr": 9.85,
+        "sl": 773.15,
+        "tp": 812.54,
+        "verdict": "DIP",
+        "reason": "Sharp pullback in uptrend: ~18.0 off in 3 sessions (> 1 ATR), RSI 44. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      }
+    ]
   }
 }
