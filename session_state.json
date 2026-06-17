@@ -1598,5 +1598,43 @@
         "vol_ratio": 0.88
       }
     ]
+  },
+  "2026-06-17": {
+    "eu_open": {
+      "CSG.AS": "NEUTRAL",
+      "IWDA.L": "NEUTRAL"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 14.23,
+        "day_chg": 2.27,
+        "rsi": 32.6,
+        "ma20": 16.34,
+        "ma50": 18.1,
+        "ma200": null,
+        "atr": 0.89,
+        "sl": 12.88,
+        "tp": 16.46,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 144.05,
+        "day_chg": -0.07,
+        "rsi": 61.2,
+        "ma20": 142.32,
+        "ma50": 138.94,
+        "ma200": 131.56,
+        "atr": 1.64,
+        "sl": 141.59,
+        "tp": 148.15,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      }
+    ]
   }
 }
