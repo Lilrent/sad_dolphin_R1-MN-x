@@ -1602,5 +1602,59 @@
         "vol_ratio": 0.53
       }
     ]
+  },
+  "2026-06-23": {
+    "eu_open": {
+      "CSG.AS": "NEUTRAL",
+      "IWDA.L": "NEUTRAL",
+      "CSPX.L": "NEUTRAL"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 14.03,
+        "day_chg": -1.98,
+        "rsi": 33.9,
+        "ma20": 15.44,
+        "ma50": 17.34,
+        "ma200": null,
+        "atr": 0.87,
+        "sl": 12.73,
+        "tp": 16.2,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 143.02,
+        "day_chg": -0.06,
+        "rsi": 56.1,
+        "ma20": 142.79,
+        "ma50": 140.04,
+        "ma200": 131.98,
+        "atr": 1.44,
+        "sl": 140.86,
+        "tp": 146.63,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 804.71,
+        "day_chg": -0.25,
+        "rsi": 54.1,
+        "ma20": 806.49,
+        "ma50": 788.5,
+        "ma200": 740.76,
+        "atr": 9.04,
+        "sl": 791.15,
+        "tp": 827.31,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      }
+    ]
   }
 }
