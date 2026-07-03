@@ -1684,7 +1684,7 @@
         "tp": 388.34,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PLTR",
@@ -1699,7 +1699,7 @@
         "tp": 146.04,
         "verdict": "AVOID",
         "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NVDA",
@@ -1714,7 +1714,7 @@
         "tp": 212.43,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NOW",
@@ -1728,8 +1728,8 @@
         "sl": 97.19,
         "tp": 121.14,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 55, green on the day (+0.3%). Held since the open wave \u2014 confirmed.",
-        "status": "CONFIRMED"
+        "reason": "Price > MA20 > MA50, RSI 55, green on the day (+0.3%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SNDK",
@@ -1744,7 +1744,7 @@
         "tp": 2269.44,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "MU",
@@ -1759,7 +1759,7 @@
         "tp": 1218.45,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CRWV",
@@ -1774,7 +1774,7 @@
         "tp": 103.64,
         "verdict": "AVOID",
         "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "INOD",
@@ -1789,7 +1789,7 @@
         "tp": 90.35,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SOFI",
@@ -1804,7 +1804,7 @@
         "tp": 20.65,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PGY",
@@ -1819,7 +1819,7 @@
         "tp": 20.75,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "META",
@@ -1834,7 +1834,7 @@
         "tp": 638.93,
         "verdict": "AVOID",
         "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ],
     "opps_last": [
