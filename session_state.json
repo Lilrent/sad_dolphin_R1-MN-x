@@ -1728,8 +1728,8 @@
         "sl": 97.19,
         "tp": 121.14,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 55, green on the day (+0.3%). (Open wave \u2014 wait for confirmation.)",
-        "status": "PROVISIONAL"
+        "reason": "Price > MA20 > MA50, RSI 55, green on the day (+0.3%). Held since the open wave \u2014 confirmed.",
+        "status": "CONFIRMED"
       },
       {
         "ticker": "SNDK",
