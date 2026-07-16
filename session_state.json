@@ -1612,15 +1612,15 @@
     "eu_last": [
       {
         "ticker": "CSG.AS",
-        "price": 13.54,
-        "day_chg": -1.2,
-        "rsi": 43.5,
+        "price": 13.55,
+        "day_chg": -1.09,
+        "rsi": 43.6,
         "ma20": 13.65,
         "ma50": 15.16,
         "ma200": null,
         "atr": 0.76,
-        "sl": 12.39,
-        "tp": 15.44,
+        "sl": 12.41,
+        "tp": 15.46,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
         "status": "OFF-SCHEDULE"
@@ -1642,17 +1642,17 @@
       },
       {
         "ticker": "CSPX.L",
-        "price": 814.74,
-        "day_chg": 0.07,
-        "rsi": 59.0,
-        "ma20": 805.65,
-        "ma50": 803.88,
+        "price": 814.51,
+        "day_chg": 0.04,
+        "rsi": 58.9,
+        "ma20": 805.64,
+        "ma50": 803.87,
         "ma200": 750.0,
         "atr": 7.65,
-        "sl": 803.27,
-        "tp": 833.86,
+        "sl": 803.04,
+        "tp": 833.63,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 59, green on the day (+0.1%).",
+        "reason": "Price > MA20 > MA50, RSI 59, green on the day (+0.0%).",
         "status": "OFF-SCHEDULE"
       }
     ]
