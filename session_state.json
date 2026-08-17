@@ -1583,48 +1583,48 @@
     "eu_last": [
       {
         "ticker": "CSG.AS",
-        "price": 19.43,
-        "day_chg": -0.44,
-        "rsi": 67.5,
-        "ma20": 17.28,
-        "ma50": 15.25,
+        "price": 19.49,
+        "day_chg": -0.11,
+        "rsi": 68.1,
+        "ma20": 17.29,
+        "ma50": 15.27,
         "ma200": null,
         "atr": 0.96,
-        "sl": 17.99,
-        "tp": 21.83,
+        "sl": 18.06,
+        "tp": 21.89,
         "verdict": "NEUTRAL",
-        "reason": "No clear setup. Was MOMENTUM at the open \u2014 opening noise, signal faded.",
-        "status": "FADED"
+        "reason": "No clear setup.",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "IWDA.L",
-        "price": 149.62,
-        "day_chg": 0.24,
-        "rsi": 70.9,
+        "price": 149.55,
+        "day_chg": 0.19,
+        "rsi": 70.7,
         "ma20": 145.66,
         "ma50": 143.91,
         "ma200": 135.57,
         "atr": 1.27,
-        "sl": 147.71,
-        "tp": 152.8,
+        "sl": 147.64,
+        "tp": 152.73,
         "verdict": "NEUTRAL",
-        "reason": "No clear setup. Was MOMENTUM at the open \u2014 opening noise, signal faded.",
-        "status": "FADED"
+        "reason": "No clear setup.",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CSPX.L",
-        "price": 840.43,
-        "day_chg": 0.21,
-        "rsi": 68.6,
-        "ma20": 818.51,
+        "price": 840.1,
+        "day_chg": 0.17,
+        "rsi": 68.4,
+        "ma20": 818.49,
         "ma50": 809.91,
         "ma200": 760.88,
         "atr": 8.06,
-        "sl": 828.34,
-        "tp": 860.58,
+        "sl": 828.01,
+        "tp": 860.25,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 69, green on the day (+0.2%). Held since the open wave \u2014 confirmed.",
-        "status": "CONFIRMED"
+        "reason": "Price > MA20 > MA50, RSI 68, green on the day (+0.2%).",
+        "status": "OFF-SCHEDULE"
       }
     ]
   }
