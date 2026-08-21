@@ -1596,48 +1596,48 @@
     "eu_last": [
       {
         "ticker": "CSG.AS",
-        "price": 18.54,
-        "day_chg": -5.16,
-        "rsi": 57.5,
+        "price": 18.41,
+        "day_chg": -5.82,
+        "rsi": 56.5,
         "ma20": 17.96,
         "ma50": 15.59,
         "ma200": null,
-        "atr": 0.94,
-        "sl": 17.13,
-        "tp": 20.89,
+        "atr": 0.95,
+        "sl": 16.99,
+        "tp": 20.78,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "IWDA.L",
-        "price": 147.38,
-        "day_chg": -0.5,
-        "rsi": 56.1,
+        "price": 147.44,
+        "day_chg": -0.46,
+        "rsi": 56.4,
         "ma20": 146.35,
         "ma50": 144.39,
         "ma200": 135.85,
         "atr": 1.27,
-        "sl": 145.47,
-        "tp": 150.56,
+        "sl": 145.53,
+        "tp": 150.62,
         "verdict": "NEUTRAL",
-        "reason": "No clear setup. Was MOMENTUM at the open \u2014 opening noise, signal faded.",
-        "status": "FADED"
+        "reason": "No clear setup.",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CSPX.L",
-        "price": 825.78,
-        "day_chg": -0.84,
-        "rsi": 53.2,
-        "ma20": 822.09,
-        "ma50": 812.4,
-        "ma200": 762.31,
+        "price": 826.28,
+        "day_chg": -0.78,
+        "rsi": 53.6,
+        "ma20": 822.12,
+        "ma50": 812.41,
+        "ma200": 762.32,
         "atr": 8.16,
-        "sl": 813.54,
-        "tp": 846.18,
+        "sl": 814.04,
+        "tp": 846.68,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ]
   }
