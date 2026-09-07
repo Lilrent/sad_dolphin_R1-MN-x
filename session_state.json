@@ -1580,48 +1580,48 @@
     "eu_last": [
       {
         "ticker": "CSG.AS",
-        "price": 16.59,
-        "day_chg": -0.1,
-        "rsi": 39.6,
-        "ma20": 18.38,
-        "ma50": 16.61,
+        "price": 16.3,
+        "day_chg": -1.81,
+        "rsi": 37.7,
+        "ma20": 18.36,
+        "ma50": 16.6,
         "ma200": null,
-        "atr": 0.78,
-        "sl": 15.41,
-        "tp": 18.54,
+        "atr": 0.8,
+        "sl": 15.11,
+        "tp": 18.3,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "IWDA.L",
-        "price": 148.14,
-        "day_chg": 0.03,
-        "rsi": 55.7,
+        "price": 148.21,
+        "day_chg": 0.08,
+        "rsi": 56.0,
         "ma20": 148.12,
-        "ma50": 145.53,
+        "ma50": 145.54,
         "ma200": 136.97,
-        "atr": 1.21,
-        "sl": 146.32,
-        "tp": 151.17,
+        "atr": 1.22,
+        "sl": 146.38,
+        "tp": 151.26,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 56, green on the day (+0.0%).",
-        "status": "NEW (1h)"
+        "reason": "Price > MA20 > MA50, RSI 56, green on the day (+0.1%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CSPX.L",
-        "price": 831.71,
-        "day_chg": 0.08,
-        "rsi": 54.7,
-        "ma20": 831.77,
-        "ma50": 818.31,
-        "ma200": 768.21,
-        "atr": 7.83,
-        "sl": 819.96,
-        "tp": 851.29,
+        "price": 831.1,
+        "day_chg": 0.01,
+        "rsi": 54.2,
+        "ma20": 831.74,
+        "ma50": 818.3,
+        "ma200": 768.2,
+        "atr": 7.91,
+        "sl": 819.23,
+        "tp": 850.88,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ],
     "us_open": {
@@ -1651,7 +1651,7 @@
         "tp": 358.79,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PLTR",
@@ -1666,7 +1666,7 @@
         "tp": 195.62,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NVDA",
@@ -1680,8 +1680,8 @@
         "sl": 219.27,
         "tp": 248.8,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+0.8%). (Open wave \u2014 wait for confirmation.)",
-        "status": "PROVISIONAL"
+        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+0.8%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NOW",
@@ -1696,7 +1696,7 @@
         "tp": 158.31,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SNDK",
@@ -1711,7 +1711,7 @@
         "tp": 2064.56,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "MU",
@@ -1725,8 +1725,8 @@
         "sl": 932.69,
         "tp": 1152.05,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+5.9%). (Open wave \u2014 wait for confirmation.)",
-        "status": "PROVISIONAL"
+        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+5.9%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CRWV",
@@ -1741,7 +1741,7 @@
         "tp": 104.65,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "INOD",
@@ -1756,7 +1756,7 @@
         "tp": 64.76,
         "verdict": "AVOID",
         "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SOFI",
@@ -1771,7 +1771,7 @@
         "tp": 20.34,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PGY",
@@ -1785,8 +1785,8 @@
         "sl": 21.16,
         "tp": 26.04,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 62, green on the day (+0.4%). (Open wave \u2014 wait for confirmation.)",
-        "status": "PROVISIONAL"
+        "reason": "Price > MA20 > MA50, RSI 62, green on the day (+0.4%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "META",
@@ -1801,7 +1801,7 @@
         "tp": 666.98,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ],
     "opps_last": [
