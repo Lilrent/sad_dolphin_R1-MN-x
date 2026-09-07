@@ -1651,7 +1651,7 @@
         "tp": 358.79,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PLTR",
@@ -1666,7 +1666,7 @@
         "tp": 195.62,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NVDA",
@@ -1680,8 +1680,8 @@
         "sl": 219.27,
         "tp": 248.8,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+0.8%). Held since the open wave \u2014 confirmed.",
-        "status": "CONFIRMED"
+        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+0.8%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "NOW",
@@ -1696,7 +1696,7 @@
         "tp": 158.31,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SNDK",
@@ -1711,7 +1711,7 @@
         "tp": 2064.56,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "MU",
@@ -1725,8 +1725,8 @@
         "sl": 932.69,
         "tp": 1152.05,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+5.9%). Held since the open wave \u2014 confirmed.",
-        "status": "CONFIRMED"
+        "reason": "Price > MA20 > MA50, RSI 60, green on the day (+5.9%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CRWV",
@@ -1741,7 +1741,7 @@
         "tp": 104.65,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "INOD",
@@ -1756,7 +1756,7 @@
         "tp": 64.76,
         "verdict": "AVOID",
         "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "SOFI",
@@ -1771,7 +1771,7 @@
         "tp": 20.34,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "PGY",
@@ -1785,8 +1785,8 @@
         "sl": 21.16,
         "tp": 26.04,
         "verdict": "MOMENTUM",
-        "reason": "Price > MA20 > MA50, RSI 62, green on the day (+0.4%). Held since the open wave \u2014 confirmed.",
-        "status": "CONFIRMED"
+        "reason": "Price > MA20 > MA50, RSI 62, green on the day (+0.4%).",
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "META",
@@ -1801,7 +1801,7 @@
         "tp": 666.98,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ],
     "opps_last": [
