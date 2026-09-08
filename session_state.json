@@ -1595,48 +1595,48 @@
     "eu_last": [
       {
         "ticker": "CSG.AS",
-        "price": 16.34,
-        "day_chg": -1.58,
-        "rsi": 37.9,
-        "ma20": 18.37,
-        "ma50": 16.6,
+        "price": 16.39,
+        "day_chg": 0.71,
+        "rsi": 38.8,
+        "ma20": 18.29,
+        "ma50": 16.67,
         "ma200": null,
-        "atr": 0.77,
-        "sl": 15.19,
-        "tp": 18.26,
+        "atr": 0.78,
+        "sl": 15.22,
+        "tp": 18.33,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "IWDA.L",
-        "price": 147.67,
-        "day_chg": -0.28,
-        "rsi": 53.1,
-        "ma20": 148.09,
-        "ma50": 145.52,
+        "price": 147.78,
+        "day_chg": -0.21,
+        "rsi": 53.7,
+        "ma20": 148.1,
+        "ma50": 145.53,
         "ma200": 136.96,
-        "atr": 1.23,
-        "sl": 145.83,
-        "tp": 150.74,
+        "atr": 1.24,
+        "sl": 145.92,
+        "tp": 150.88,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       },
       {
         "ticker": "CSPX.L",
-        "price": 829.15,
-        "day_chg": -0.23,
+        "price": 829.25,
+        "day_chg": -0.22,
         "rsi": 52.5,
-        "ma20": 831.64,
+        "ma20": 831.65,
         "ma50": 818.26,
         "ma200": 768.19,
-        "atr": 7.88,
-        "sl": 817.33,
-        "tp": 848.85,
+        "atr": 7.99,
+        "sl": 817.27,
+        "tp": 849.22,
         "verdict": "NEUTRAL",
         "reason": "No clear setup.",
-        "status": "\u2014"
+        "status": "OFF-SCHEDULE"
       }
     ]
   }
