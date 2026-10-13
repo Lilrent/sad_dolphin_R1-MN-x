@@ -1588,5 +1588,59 @@
         "vol_ratio": 0.5
       }
     ]
+  },
+  "2026-10-13": {
+    "eu_open": {
+      "CSG.AS": "NEUTRAL",
+      "IWDA.L": "NEUTRAL",
+      "CSPX.L": "MOMENTUM"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 13.97,
+        "day_chg": -0.98,
+        "rsi": 35.6,
+        "ma20": 14.94,
+        "ma50": 16.8,
+        "ma200": null,
+        "atr": 0.6,
+        "sl": 13.07,
+        "tp": 15.48,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 147.41,
+        "day_chg": 0.5,
+        "rsi": 52.6,
+        "ma20": 146.54,
+        "ma50": 147.2,
+        "ma200": 139.08,
+        "atr": 1.43,
+        "sl": 145.27,
+        "tp": 150.98,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 841.26,
+        "day_chg": 0.31,
+        "rsi": 57.7,
+        "ma20": 830.86,
+        "ma50": 829.97,
+        "ma200": 780.47,
+        "atr": 8.25,
+        "sl": 828.89,
+        "tp": 861.87,
+        "verdict": "MOMENTUM",
+        "reason": "Price > MA20 > MA50, RSI 58, green on the day (+0.3%). (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      }
+    ]
   }
 }
