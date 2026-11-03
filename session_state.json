@@ -1542,5 +1542,43 @@
         "vol_ratio": 0.71
       }
     ]
+  },
+  "2026-11-03": {
+    "eu_open": {
+      "CSG.AS": "NEUTRAL",
+      "IWDA.L": "DIP"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 14.47,
+        "day_chg": -1.88,
+        "rsi": 47.8,
+        "ma20": 14.36,
+        "ma50": 15.53,
+        "ma200": null,
+        "atr": 0.6,
+        "sl": 13.57,
+        "tp": 15.97,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 144.71,
+        "day_chg": -1.39,
+        "rsi": 40.5,
+        "ma20": 146.69,
+        "ma50": 146.82,
+        "ma200": 140.15,
+        "atr": 1.38,
+        "sl": 142.64,
+        "tp": 148.16,
+        "verdict": "DIP",
+        "reason": "Sharp pullback in uptrend: ~1.9 off in 3 sessions (> 1 ATR), RSI 40. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      }
+    ]
   }
 }
