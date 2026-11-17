@@ -1603,5 +1603,59 @@
         "vol_ratio": 0.5
       }
     ]
+  },
+  "2026-11-17": {
+    "eu_open": {
+      "CSG.AS": "AVOID",
+      "IWDA.L": "NEUTRAL",
+      "CSPX.L": "NEUTRAL"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 10.1,
+        "day_chg": 0.84,
+        "rsi": 24.0,
+        "ma20": 13.5,
+        "ma50": 14.46,
+        "ma200": 18.88,
+        "atr": 0.73,
+        "sl": 9.0,
+        "tp": 11.94,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 143.96,
+        "day_chg": -1.07,
+        "rsi": 45.0,
+        "ma20": 145.3,
+        "ma50": 146.14,
+        "ma200": 140.73,
+        "atr": 1.93,
+        "sl": 141.07,
+        "tp": 148.78,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 813.41,
+        "day_chg": -1.28,
+        "rsi": 44.0,
+        "ma20": 823.33,
+        "ma50": 828.0,
+        "ma200": 791.02,
+        "atr": 12.17,
+        "sl": 795.16,
+        "tp": 843.83,
+        "verdict": "NEUTRAL",
+        "reason": "No clear setup.",
+        "status": "\u2014"
+      }
+    ]
   }
 }
