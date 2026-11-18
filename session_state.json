@@ -1587,5 +1587,59 @@
         "vol_ratio": 0.5
       }
     ]
+  },
+  "2026-11-18": {
+    "eu_open": {
+      "CSG.AS": "AVOID",
+      "IWDA.L": "DIP",
+      "CSPX.L": "DIP"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 10.04,
+        "day_chg": -0.55,
+        "rsi": 23.8,
+        "ma20": 13.25,
+        "ma50": 14.34,
+        "ma200": 18.78,
+        "atr": 0.73,
+        "sl": 8.95,
+        "tp": 11.87,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 143.07,
+        "day_chg": -0.62,
+        "rsi": 42.3,
+        "ma20": 145.12,
+        "ma50": 146.04,
+        "ma200": 140.77,
+        "atr": 1.91,
+        "sl": 140.21,
+        "tp": 147.84,
+        "verdict": "DIP",
+        "reason": "Sharp pullback in uptrend: ~2.2 off in 3 sessions (> 1 ATR), RSI 42. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 808.41,
+        "day_chg": -0.61,
+        "rsi": 41.5,
+        "ma20": 822.07,
+        "ma50": 827.57,
+        "ma200": 791.34,
+        "atr": 12.17,
+        "sl": 790.15,
+        "tp": 838.84,
+        "verdict": "DIP",
+        "reason": "Sharp pullback in uptrend: ~13.4 off in 3 sessions (> 1 ATR), RSI 41. (Open wave \u2014 wait for confirmation.)",
+        "status": "PROVISIONAL"
+      }
+    ]
   }
 }
