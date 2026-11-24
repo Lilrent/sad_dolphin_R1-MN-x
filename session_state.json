@@ -1525,5 +1525,43 @@
         "vol_ratio": 0.64
       }
     ]
+  },
+  "2026-11-24": {
+    "eu_open": {
+      "IWDA.L": "AVOID",
+      "CSPX.L": "AVOID"
+    },
+    "eu_last": [
+      {
+        "ticker": "IWDA.L",
+        "price": 134.79,
+        "day_chg": -3.06,
+        "rsi": 25.2,
+        "ma20": 143.55,
+        "ma50": 145.36,
+        "ma200": 140.88,
+        "atr": 2.33,
+        "sl": 131.29,
+        "tp": 140.62,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 762.4,
+        "day_chg": -3.39,
+        "rsi": 25.2,
+        "ma20": 812.57,
+        "ma50": 824.19,
+        "ma200": 792.19,
+        "atr": 14.7,
+        "sl": 740.35,
+        "tp": 799.16,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      }
+    ]
   }
 }
