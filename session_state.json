@@ -1539,5 +1539,59 @@
         "vol_ratio": 0.61
       }
     ]
+  },
+  "2026-11-26": {
+    "eu_open": {
+      "CSG.AS": "AVOID",
+      "IWDA.L": "AVOID",
+      "CSPX.L": "AVOID"
+    },
+    "eu_last": [
+      {
+        "ticker": "CSG.AS",
+        "price": 8.9,
+        "day_chg": -5.53,
+        "rsi": 28.5,
+        "ma20": 11.75,
+        "ma50": 13.5,
+        "ma200": 18.13,
+        "atr": 0.73,
+        "sl": 7.81,
+        "tp": 10.73,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "IWDA.L",
+        "price": 136.61,
+        "day_chg": -1.05,
+        "rsi": 34.4,
+        "ma20": 142.65,
+        "ma50": 145.03,
+        "ma200": 140.91,
+        "atr": 2.42,
+        "sl": 132.98,
+        "tp": 142.67,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      },
+      {
+        "ticker": "CSPX.L",
+        "price": 773.39,
+        "day_chg": -1.3,
+        "rsi": 35.1,
+        "ma20": 807.3,
+        "ma50": 822.53,
+        "ma200": 792.54,
+        "atr": 15.42,
+        "sl": 750.27,
+        "tp": 811.93,
+        "verdict": "AVOID",
+        "reason": "Below MA200 and MA50 \u2014 broken trend, falling knife risk.",
+        "status": "\u2014"
+      }
+    ]
   }
 }
